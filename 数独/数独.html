@@ -1,0 +1,1137 @@
+﻿<html>
+<head>
+<title>数独5.0</title>
+<meta charset='utf-8'>
+<style>
+
+</style>
+</head>
+<body>
+<div style="height:100px" align=center><h1 id="h1">当前难度为简单</h1></div>
+<table cellspacing=0 cellpadding=0 align=center>
+	<tr>
+		<td>
+			<table border=2px cellspacing=0 width=135px height=135px>
+				<tr>
+					<td id="01" align=center width=45px height=45px></td>
+					<td id="02" align=center width=45px height=45px></td>
+					<td id="03" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="10" align=center width=45px height=45px></td>
+					<td id="11" align=center width=45px height=45px></td>
+					<td id="12" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="19" align=center width=45px height=45px></td>
+					<td id="20" align=center width=45px height=45px></td>
+					<td id="21" align=center width=45px height=45px></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table border=2px cellspacing=0 width=135px height=135px>
+				<tr>
+					<td id="04" align=center width=45px height=45px></td>
+					<td id="05" align=center width=45px height=45px></td>
+					<td id="06" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="13" align=center width=45px height=45px></td>
+					<td id="14" align=center width=45px height=45px></td>
+					<td id="15" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="22" align=center width=45px height=45px></td>
+					<td id="23" align=center width=45px height=45px></td>
+					<td id="24" align=center width=45px height=45px></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table border=2px cellspacing=0 width=135px height=135px>
+				<tr>
+					<td id="07" align=center width=45px height=45px></td>
+					<td id="08" align=center width=45px height=45px></td>
+					<td id="09" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="16" align=center width=45px height=45px></td>
+					<td id="17" align=center width=45px height=45px></td>
+					<td id="18" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="25" align=center width=45px height=45px></td>
+					<td id="26" align=center width=45px height=45px></td>
+					<td id="27" align=center width=45px height=45px></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table border=2px cellspacing=0 width=135px height=135px>
+				<tr>
+					<td id="28" align=center width=45px height=45px></td>
+					<td id="29" align=center width=45px height=45px></td>
+					<td id="30" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="37" align=center width=45px height=45px></td>
+					<td id="38" align=center width=45px height=45px></td>
+					<td id="39" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="46" align=center width=45px height=45px></td>
+					<td id="47" align=center width=45px height=45px></td>
+					<td id="48" align=center width=45px height=45px></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table border=2px cellspacing=0 width=135px height=135px>
+				<tr>
+					<td id="31" align=center width=45px height=45px></td>
+					<td id="32" align=center width=45px height=45px></td>
+					<td id="33" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="40" align=center width=45px height=45px></td>
+					<td id="41" align=center width=45px height=45px></td>
+					<td id="42" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="49" align=center width=45px height=45px></td>
+					<td id="50" align=center width=45px height=45px></td>
+					<td id="51" align=center width=45px height=45px></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table border=2px cellspacing=0 width=135px height=135px>
+				<tr>
+					<td id="34" align=center width=45px height=45px></td>
+					<td id="35" align=center width=45px height=45px></td>
+					<td id="36" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="43" align=center width=45px height=45px></td>
+					<td id="44" align=center width=45px height=45px></td>
+					<td id="45" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="52" align=center width=45px height=45px></td>
+					<td id="53" align=center width=45px height=45px></td>
+					<td id="54" align=center width=45px height=45px></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table border=2px cellspacing=0 width=135px height=135px>
+				<tr>
+					<td id="55" align=center width=45px height=45px></td>
+					<td id="56" align=center width=45px height=45px></td>
+					<td id="57" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="64" align=center width=45px height=45px></td>
+					<td id="65" align=center width=45px height=45px></td>
+					<td id="66" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="73" align=center width=45px height=45px></td>
+					<td id="74" align=center width=45px height=45px></td>
+					<td id="75" align=center width=45px height=45px></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table border=2px cellspacing=0 width=135px height=135px>
+				<tr>
+					<td id="58" align=center width=45px height=45px></td>
+					<td id="59" align=center width=45px height=45px></td>
+					<td id="60" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="67" align=center width=45px height=45px></td>
+					<td id="68" align=center width=45px height=45px></td>
+					<td id="69" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="76" align=center width=45px height=45px></td>
+					<td id="77" align=center width=45px height=45px></td>
+					<td id="78" align=center width=45px height=45px></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table border=2px cellspacing=0 width=135px height=135px>
+				<tr>
+					<td id="61" align=center width=45px height=45px></td>
+					<td id="62" align=center width=45px height=45px></td>
+					<td id="63" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="70" align=center width=45px height=45px></td>
+					<td id="71" align=center width=45px height=45px></td>
+					<td id="72" align=center width=45px height=45px></td>
+				</tr>
+				<tr>
+					<td id="79" align=center width=45px height=45px></td>
+					<td id="80" align=center width=45px height=45px></td>
+					<td id="81" align=center width=45px height=45px></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+ </table>
+<div style="height:50px" align=center>选择难度：
+<input type="button" value="简单" onclick="easy()">
+<input type="button" value="困难" onclick="hard()">
+<input type="button" value="噩梦" onclick="veryHard()"></div>
+<div align=center>插入行：<input type="text" id="t1"><br></div>
+<div align=center>插入列：<input type="text" id="t2"><br></div>
+<div align=center style="height:200px">插入数：<input type="text" id="t3"><input type="button" value="确定" onclick="setNum()"><input type="button" value="修改" onclick="update()"></div>
+<div align=center><input type="button" value="开始" onclick="fn()"></div>
+<script>
+	function $(id){
+		return document.getElementById("id");
+	}
+	var line=0;
+	var list=0;
+	var arr26=[];
+	var arr27=[];
+	var arr28=[];
+	var arr29=[];
+	var arr30=[];
+	var arr31=[];
+	var arr32=[];
+	var arr33=[];
+	var arr34=[];
+	function setNum(){
+		line=document.getElementById("t1").value;
+		line=Number(line);
+		console.log(line);
+		list=document.getElementById("t2").value;
+		list=Number(list);
+		console.log(list);
+		if(line==1&&list==1&&document.getElementById("01").innerHTML==""){
+			document.getElementById("01").innerHTML=document.getElementById("t3").value;
+			document.getElementById("01").style="color:blue";
+			if(document.getElementById("t3").value!=arr26[0]){
+				document.getElementById("01").style="color:red";
+			}
+		}
+		if(line==1&&list==2&&document.getElementById("02").innerHTML==""){
+			document.getElementById("02").innerHTML=document.getElementById("t3").value;
+			document.getElementById("02").style="color:blue";
+			if(document.getElementById("t3").value!=arr26[1]){
+				document.getElementById("02").style="color:red";
+			}
+		}
+		if(line==1&&list==3&&document.getElementById("03").innerHTML==""){
+			document.getElementById("03").innerHTML=document.getElementById("t3").value;
+			document.getElementById("03").style="color:blue";
+			if(document.getElementById("t3").value!=arr26[2]){
+				document.getElementById("03").style="color:red";
+			}
+		}
+		if(line==1&&list==4&&document.getElementById("04").innerHTML==""){
+			document.getElementById("04").innerHTML=document.getElementById("t3").value;
+			document.getElementById("04").style="color:blue";
+			if(document.getElementById("t3").value!=arr26[3]){
+				document.getElementById("04").style="color:red";
+			}
+		}
+		if(line==1&&list==5&&document.getElementById("05").innerHTML==""){
+			document.getElementById("05").innerHTML=document.getElementById("t3").value;
+			document.getElementById("05").style="color:blue";
+			if(document.getElementById("t3").value!=arr26[4]){
+				document.getElementById("05").style="color:red";
+			}
+		}
+		if(line==1&&list==6&&document.getElementById("06").innerHTML==""){
+			document.getElementById("06").innerHTML=document.getElementById("t3").value;
+			document.getElementById("06").style="color:blue";
+			if(document.getElementById("t3").value!=arr26[5]){
+				document.getElementById("06").style="color:red";
+			}
+		}
+		if(line==1&&list==7&&document.getElementById("07").innerHTML==""){
+			document.getElementById("07").innerHTML=document.getElementById("t3").value;
+			document.getElementById("07").style="color:blue";
+			if(document.getElementById("t3").value!=arr26[6]){
+				document.getElementById("07").style="color:red";
+			}
+		}
+		if(line==1&&list==8&&document.getElementById("08").innerHTML==""){
+			document.getElementById("08").innerHTML=document.getElementById("t3").value;
+			document.getElementById("08").style="color:blue";
+			if(document.getElementById("t3").value!=arr26[7]){
+				document.getElementById("08").style="color:red";
+			}
+		}
+		if(line==1&&list==9&&document.getElementById("09").innerHTML==""){
+			document.getElementById("09").innerHTML=document.getElementById("t3").value;
+			document.getElementById("09").style="color:blue";
+			if(document.getElementById("t3").value!=arr26[8]){
+				document.getElementById("09").style="color:red";
+			}
+		}
+		if(line==2&&list==1&&document.getElementById("10").innerHTML==""){
+			document.getElementById("10").innerHTML=document.getElementById("t3").value;
+			document.getElementById("10").style="color:blue";
+			if(document.getElementById("t3").value!=arr27[0]){
+				document.getElementById("10").style="color:red";
+			}
+		}
+		if(line==2&&list==2&&document.getElementById("11").innerHTML==""){
+			document.getElementById("11").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==3&&document.getElementById("12").innerHTML==""){
+			document.getElementById("12").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==4&&document.getElementById("13").innerHTML==""){
+			document.getElementById("13").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==5&&document.getElementById("14").innerHTML==""){
+			document.getElementById("14").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==6&&document.getElementById("15").innerHTML==""){
+			document.getElementById("15").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==7&&document.getElementById("16").innerHTML==""){
+			document.getElementById("16").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==8&&document.getElementById("17").innerHTML==""){
+			document.getElementById("17").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==9&&document.getElementById("18").innerHTML==""){
+			document.getElementById("18").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==1&&document.getElementById("19").innerHTML==""){
+			document.getElementById("19").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==2&&document.getElementById("20").innerHTML==""){
+			document.getElementById("20").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==3&&document.getElementById("21").innerHTML==""){
+			document.getElementById("21").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==4&&document.getElementById("22").innerHTML==""){
+			document.getElementById("22").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==5&&document.getElementById("23").innerHTML==""){
+			document.getElementById("23").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==6&&document.getElementById("24").innerHTML==""){
+			document.getElementById("24").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==7&&document.getElementById("25").innerHTML==""){
+			document.getElementById("25").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==8&&document.getElementById("26").innerHTML==""){
+			document.getElementById("26").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==9&&document.getElementById("27").innerHTML==""){
+			document.getElementById("27").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==1&&document.getElementById("28").innerHTML==""){
+			document.getElementById("28").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==2&&document.getElementById("29").innerHTML==""){
+			document.getElementById("29").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==3&&document.getElementById("30").innerHTML==""){
+			document.getElementById("30").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==4&&document.getElementById("31").innerHTML==""){
+			document.getElementById("31").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==5&&document.getElementById("32").innerHTML==""){
+			document.getElementById("32").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==6&&document.getElementById("33").innerHTML==""){
+			document.getElementById("33").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==7&&document.getElementById("34").innerHTML==""){
+			document.getElementById("34").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==8&&document.getElementById("35").innerHTML==""){
+			document.getElementById("35").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==9&&document.getElementById("36").innerHTML==""){
+			document.getElementById("36").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==1&&document.getElementById("37").innerHTML==""){
+			document.getElementById("37").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==2&&document.getElementById("38").innerHTML==""){
+			document.getElementById("38").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==3&&document.getElementById("39").innerHTML==""){
+			document.getElementById("39").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==4&&document.getElementById("40").innerHTML==""){
+			document.getElementById("40").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==5&&document.getElementById("41").innerHTML==""){
+			document.getElementById("41").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==6&&document.getElementById("42").innerHTML==""){
+			document.getElementById("42").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==7&&document.getElementById("43").innerHTML==""){
+			document.getElementById("43").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==8&&document.getElementById("44").innerHTML==""){
+			document.getElementById("44").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==9&&document.getElementById("45").innerHTML==""){
+			document.getElementById("45").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==1&&document.getElementById("46").innerHTML==""){
+			document.getElementById("46").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==2&&document.getElementById("47").innerHTML==""){
+			document.getElementById("47").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==3&&document.getElementById("48").innerHTML==""){
+			document.getElementById("48").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==4&&document.getElementById("49").innerHTML==""){
+			document.getElementById("49").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==5&&document.getElementById("50").innerHTML==""){
+			document.getElementById("50").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==6&&document.getElementById("51").innerHTML==""){
+			document.getElementById("51").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==7&&document.getElementById("52").innerHTML==""){
+			document.getElementById("52").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==8&&document.getElementById("53").innerHTML==""){
+			document.getElementById("53").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==9&&document.getElementById("54").innerHTML==""){
+			document.getElementById("54").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==1&&document.getElementById("55").innerHTML==""){
+			document.getElementById("55").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==2&&document.getElementById("56").innerHTML==""){
+			document.getElementById("56").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==3&&document.getElementById("57").innerHTML==""){
+			document.getElementById("57").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==4&&document.getElementById("58").innerHTML==""){
+			document.getElementById("58").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==5&&document.getElementById("59").innerHTML==""){
+			document.getElementById("59").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==6&&document.getElementById("60").innerHTML==""){
+			document.getElementById("60").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==7&&document.getElementById("61").innerHTML==""){
+			document.getElementById("61").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==8&&document.getElementById("62").innerHTML==""){
+			document.getElementById("62").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==9&&document.getElementById("63").innerHTML==""){
+			document.getElementById("63").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==1&&document.getElementById("64").innerHTML==""){
+			document.getElementById("64").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==2&&document.getElementById("65").innerHTML==""){
+			document.getElementById("65").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==3&&document.getElementById("66").innerHTML==""){
+			document.getElementById("66").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==4&&document.getElementById("67").innerHTML==""){
+			document.getElementById("67").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==5&&document.getElementById("68").innerHTML==""){
+			document.getElementById("68").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==6&&document.getElementById("69").innerHTML==""){
+			document.getElementById("69").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==7&&document.getElementById("70").innerHTML==""){
+			document.getElementById("70").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==8&&document.getElementById("71").innerHTML==""){
+			document.getElementById("71").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==9&&document.getElementById("72").innerHTML==""){
+			document.getElementById("72").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==1&&document.getElementById("73").innerHTML==""){
+			document.getElementById("73").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==2&&document.getElementById("74").innerHTML==""){
+			document.getElementById("74").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==3&&document.getElementById("75").innerHTML==""){
+			document.getElementById("75").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==4&&document.getElementById("76").innerHTML==""){
+			document.getElementById("76").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==5&&document.getElementById("77").innerHTML==""){
+			document.getElementById("77").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==6&&document.getElementById("78").innerHTML==""){
+			document.getElementById("78").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==7&&document.getElementById("79").innerHTML==""){
+			document.getElementById("79").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==8&&document.getElementById("80").innerHTML==""){
+			document.getElementById("80").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==9&&document.getElementById("81").innerHTML==""){
+			document.getElementById("81").innerHTML=document.getElementById("t3").value;
+		}
+	}
+	function easy(){
+		var a=document.getElementById("h1");
+		a.innerHTML="当前难度为简单"
+		n=2;
+	}
+	function hard(){
+		var a=document.getElementById("h1");
+		a.innerHTML="当前难度为困难"
+		n=4;
+	}
+	function veryHard(){
+		var a=document.getElementById("h1");
+		a.innerHTML="当前难度为噩梦"
+		n=6;
+	}
+	function fn(){
+	var arr1=[];
+	var arr=[1,2,3,4,5,6,7,8,9];
+	for(i1=0;i1<9;i1++){
+		var a1=arr.length*Math.random()
+		arr1[i1]=arr[parseInt(a1)]
+		arr.splice(parseInt(a1),1);
+	}
+		do{
+			var arr2=[];
+			var arr10=[1,2,3,4,5,6,7,8,9];
+			for(i2=0;i2<9;i2++){
+				var a=arr10.length*Math.random()	
+				arr2[i2]=arr10[parseInt(a)]
+				arr10.splice(parseInt(a),1)
+			}}while(arr2[0]==arr1[0]||arr2[0]==arr1[1]||arr2[0]==arr1[2]||arr2[1]==arr1[0]||arr2[1]==arr1[1]||arr2[1]==arr1[2]||arr2[2]==arr1[0]||arr2[2]==arr1[1]||arr2[2]==arr1[2]||arr2[3]==arr1[3]||arr2[3]==arr1[4]||arr2[3]==arr1[5]||arr2[4]==arr1[3]||arr2[4]==arr1[4]||arr2[4]==arr1[5]||arr2[5]==arr1[3]||arr2[5]==arr1[4]||arr2[5]==arr1[5]||arr2[6]==arr1[6]||arr2[6]==arr1[7]||arr2[6]==arr1[8]||arr2[7]==arr1[6]||arr2[7]==arr1[7]||arr2[7]==arr1[8]||arr2[8]==arr1[6]||arr2[8]==arr1[7]||arr2[8]==arr1[8])
+
+		do{
+			var arr3=[];
+			var arr11=[1,2,3,4,5,6,7,8,9];
+			for(i3=0;i3<9;i3++){
+				var a=arr11.length*Math.random()
+				arr3[i3]=arr11[parseInt(a)]
+				arr11.splice(parseInt(a),1)
+			}}while(arr3[0]==arr1[0]||arr3[0]==arr1[1]||arr3[0]==arr1[2]||arr3[1]==arr1[0]||arr3[1]==arr1[1]||arr3[1]==arr1[2]||arr3[2]==arr1[0]||arr3[2]==arr1[1]||arr3[2]==arr1[2]||arr3[3]==arr1[3]||arr3[3]==arr1[4]||arr3[3]==arr1[5]||arr3[4]==arr1[3]||arr3[4]==arr1[4]||arr3[4]==arr1[5]||arr3[5]==arr1[3]||arr3[5]==arr1[4]||arr3[5]==arr1[5]||arr3[6]==arr1[6]||arr3[6]==arr1[7]||arr3[6]==arr1[8]||arr3[7]==arr1[6]||arr3[7]==arr1[7]||arr3[7]==arr1[8]||arr3[8]==arr1[6]||arr3[8]==arr1[7]||arr3[8]==arr1[8]||arr3[0]==arr2[0]||arr3[0]==arr2[1]||arr3[0]==arr2[2]||arr3[1]==arr2[0]||arr3[1]==arr2[1]||arr3[1]==arr2[2]||arr3[2]==arr2[0]||arr3[2]==arr2[1]||arr3[2]==arr2[2]||arr3[3]==arr2[3]||arr3[3]==arr2[4]||arr3[3]==arr2[5]||arr3[4]==arr2[3]||arr3[4]==arr2[4]||arr3[4]==arr2[5]||arr3[5]==arr2[3]||arr3[5]==arr2[4]||arr3[5]==arr2[5]||arr3[6]==arr2[6]||arr3[6]==arr2[7]||arr3[6]==arr2[8]||arr3[7]==arr2[6]||arr3[7]==arr2[7]||arr3[7]==arr2[8]||arr3[8]==arr2[6]||arr3[8]==arr2[7]||arr3[8]==arr2[8])
+
+		do{
+			var arr4=[];
+			var arr12=[1,2,3,4,5,6,7,8,9];
+			for(i4=0;i4<9;i4++){
+				var a=arr12.length*Math.random()
+				arr4[i4]=arr12[parseInt(a)]
+				arr12.splice(parseInt(a),1)
+			}}while(arr4[0]==arr1[0]||arr4[0]==arr2[0]||arr4[0]==arr3[0]||arr4[1]==arr1[1]||arr4[1]==arr2[1]||arr4[1]==arr3[1]||arr4[2]==arr1[2]||arr4[2]==arr2[2]||arr4[2]==arr3[2]||arr4[3]==arr1[3]||arr4[3]==arr2[3]||arr4[3]==arr3[3]||arr4[4]==arr1[4]||arr4[4]==arr2[4]||arr4[4]==arr3[4]||arr4[5]==arr1[5]||arr4[5]==arr2[5]||arr4[5]==arr3[5]||arr4[6]==arr1[6]||arr4[6]==arr2[6]||arr4[6]==arr3[6]||arr4[7]==arr1[7]||arr4[7]==arr2[7]||arr4[7]==arr3[7]||arr4[8]==arr1[8]||arr4[8]==arr2[8]||arr4[8]==arr3[8])
+
+		do{
+			var arr5=[];
+			var arr13=[1,2,3,4,5,6,7,8,9];
+			for(i5=0;i5<9;i5++){
+				var a=arr13.length*Math.random()
+				arr5[i5]=arr13[parseInt(a)]
+				arr13.splice(parseInt(a),1)
+			}}while(arr5[0]==arr1[0]||arr5[0]==arr2[0]||arr5[0]==arr3[0]||arr5[1]==arr1[1]||arr5[1]==arr2[1]||arr5[1]==arr3[1]||arr5[2]==arr1[2]||arr5[2]==arr2[2]||arr5[2]==arr3[2]||arr5[3]==arr1[3]||arr5[3]==arr2[3]||arr5[3]==arr3[3]||arr5[4]==arr1[4]||arr5[4]==arr2[4]||arr5[4]==arr3[4]||arr5[5]==arr1[5]||arr5[5]==arr2[5]||arr5[5]==arr3[5]||arr5[6]==arr1[6]||arr5[6]==arr2[6]||arr5[6]==arr3[6]||arr5[7]==arr1[7]||arr5[7]==arr2[7]||arr5[7]==arr3[7]||arr5[8]==arr1[8]||arr5[8]==arr2[8]||arr5[8]==arr3[8]||arr5[0]==arr4[0]||arr5[0]==arr4[1]||arr5[0]==arr4[2]||arr5[1]==arr4[0]||arr5[1]==arr4[1]||arr5[1]==arr4[2]||arr5[2]==arr4[0]||arr5[2]==arr4[1]||arr5[2]==arr4[2]||arr5[3]==arr4[3]||arr5[3]==arr4[4]||arr5[3]==arr4[5]||arr5[4]==arr4[3]||arr5[4]==arr4[4]||arr5[4]==arr4[5]||arr5[5]==arr4[3]||arr5[5]==arr4[4]||arr5[5]==arr4[5]||arr5[6]==arr4[6]||arr5[6]==arr4[7]||arr5[6]==arr4[8]||arr5[7]==arr4[6]||arr5[7]==arr4[7]||arr5[7]==arr4[8]||arr5[8]==arr4[6]||arr5[8]==arr4[7]||arr5[8]==arr4[8])
+
+		do{
+			var arr6=[];
+			var arr14=[1,2,3,4,5,6,7,8,9];
+			for(i6=0;i6<9;i6++){
+				var a=arr14.length*Math.random()	
+				arr6[i6]=arr14[parseInt(a)]
+				arr14.splice(parseInt(a),1)
+			}}while(arr6[0]==arr1[0]||arr6[0]==arr2[0]||arr6[0]==arr3[0]||arr6[1]==arr1[1]||arr6[1]==arr2[1]||arr6[1]==arr3[1]||arr6[2]==arr1[2]||arr6[2]==arr2[2]||arr6[2]==arr3[2]||arr6[3]==arr1[3]||arr6[3]==arr2[3]||arr6[3]==arr3[3]||arr6[4]==arr1[4]||arr6[4]==arr2[4]||arr6[4]==arr3[4]||arr6[5]==arr1[5]||arr6[5]==arr2[5]||arr6[5]==arr3[5]||arr6[6]==arr1[6]||arr6[6]==arr2[6]||arr6[6]==arr3[6]||arr6[7]==arr1[7]||arr6[7]==arr2[7]||arr6[7]==arr3[7]||arr6[8]==arr1[8]||arr6[8]==arr2[8]||arr6[8]==arr3[8]||arr6[0]==arr4[0]||arr6[0]==arr4[1]||arr6[0]==arr4[2]||arr6[1]==arr4[0]||arr6[1]==arr4[1]||arr6[1]==arr4[2]||arr6[2]==arr4[0]||arr6[2]==arr4[1]||arr6[2]==arr4[2]||arr6[3]==arr4[3]||arr6[3]==arr4[4]||arr6[3]==arr4[5]||arr6[4]==arr4[3]||arr6[4]==arr4[4]||arr6[4]==arr4[5]||arr6[5]==arr4[3]||arr6[5]==arr4[4]||arr6[5]==arr4[5]||arr6[6]==arr4[6]||arr6[6]==arr4[7]||arr6[6]==arr4[8]||arr6[7]==arr4[6]||arr6[7]==arr4[7]||arr6[7]==arr4[8]||arr6[8]==arr4[6]||arr6[8]==arr4[7]||arr6[8]==arr4[8]||arr6[0]==arr5[0]||arr6[0]==arr5[1]||arr6[0]==arr5[2]||arr6[1]==arr5[0]||arr6[1]==arr5[1]||arr6[1]==arr5[2]||arr6[2]==arr5[0]||arr6[2]==arr5[1]||arr6[2]==arr5[2]||arr6[3]==arr5[3]||arr6[3]==arr5[4]||arr6[3]==arr5[5]||arr6[4]==arr5[3]||arr6[4]==arr5[4]||arr6[4]==arr5[5]||arr6[5]==arr5[3]||arr6[5]==arr5[4]||arr6[5]==arr5[5]||arr6[6]==arr5[6]||arr6[6]==arr5[7]||arr6[6]==arr5[8]||arr6[7]==arr5[6]||arr6[7]==arr5[7]||arr6[7]==arr5[8]||arr6[8]==arr5[6]||arr6[8]==arr5[7]||arr6[8]==arr5[8])
+
+		do{
+			var arr7=[];
+			var arr15=[1,2,3,4,5,6,7,8,9];
+			for(i7=0;i7<9;i7++){
+				var a=arr15.length*Math.random()	
+				arr7[i7]=arr15[parseInt(a)]
+				arr15.splice(parseInt(a),1)
+			}}while(arr7[0]==arr1[0]||arr7[0]==arr2[0]||arr7[0]==arr3[0]||arr7[0]==arr4[0]||arr7[0]==arr5[0]||arr7[0]==arr6[0]||arr7[1]==arr1[1]||arr7[1]==arr2[1]||arr7[1]==arr3[1]||arr7[1]==arr4[1]||arr7[1]==arr5[1]||arr7[1]==arr6[1]||arr7[2]==arr1[2]||arr7[2]==arr2[2]||arr7[2]==arr3[2]||arr7[2]==arr4[2]||arr7[2]==arr5[2]||arr7[2]==arr6[2]||arr7[3]==arr1[3]||arr7[3]==arr2[3]||arr7[3]==arr3[3]||arr7[3]==arr4[3]||arr7[3]==arr5[3]||arr7[3]==arr6[3]||arr7[4]==arr1[4]||arr7[4]==arr2[4]||arr7[4]==arr3[4]||arr7[4]==arr4[4]||arr7[4]==arr5[4]||arr7[4]==arr6[4]||arr7[5]==arr1[5]||arr7[5]==arr2[5]||arr7[5]==arr3[5]||arr7[5]==arr4[5]||arr7[5]==arr5[5]||arr7[5]==arr6[5]||arr7[6]==arr1[6]||arr7[6]==arr2[6]||arr7[6]==arr3[6]||arr7[6]==arr4[6]||arr7[6]==arr5[6]||arr7[6]==arr6[6]||arr7[7]==arr1[7]||arr7[7]==arr2[7]||arr7[7]==arr3[7]||arr7[7]==arr4[7]||arr7[7]==arr5[7]||arr7[7]==arr6[7]||arr7[8]==arr1[8]||arr7[8]==arr2[8]||arr7[8]==arr3[8]||arr7[8]==arr4[8]||arr7[8]==arr5[8]||arr7[8]==arr6[8])
+		do{
+			var arr8=[];
+			var arr16=[1,2,3,4,5,6,7,8,9];
+			for(i8=0;i8<9;i8++){	
+				var a=arr16.length*Math.random()	
+				arr8[i8]=arr16[parseInt(a)]
+				arr16.splice(parseInt(a),1)
+			}}while(arr8[0]==arr1[0]||arr8[0]==arr2[0]||arr8[0]==arr3[0]||arr8[0]==arr4[0]||arr8[0]==arr5[0]||arr8[0]==arr6[0]||arr8[1]==arr1[1]||arr8[1]==arr2[1]||arr8[1]==arr3[1]||arr8[1]==arr4[1]||arr8[1]==arr5[1]||arr8[1]==arr6[1]||arr8[2]==arr1[2]||arr8[2]==arr2[2]||arr8[2]==arr3[2]||arr8[2]==arr4[2]||arr8[2]==arr5[2]||arr8[2]==arr6[2]||arr8[3]==arr1[3]||arr8[3]==arr2[3]||arr8[3]==arr3[3]||arr8[3]==arr4[3]||arr8[3]==arr5[3]||arr8[3]==arr6[3]||arr8[4]==arr1[4]||arr8[4]==arr2[4]||arr8[4]==arr3[4]||arr8[4]==arr4[4]||arr8[4]==arr5[4]||arr8[4]==arr6[4]||arr8[5]==arr1[5]||arr8[5]==arr2[5]||arr8[5]==arr3[5]||arr8[5]==arr4[5]||arr8[5]==arr5[5]||arr8[5]==arr6[5]||arr8[6]==arr1[6]||arr8[6]==arr2[6]||arr8[6]==arr3[6]||arr8[6]==arr4[6]||arr8[6]==arr5[6]||arr8[6]==arr6[6]||arr8[7]==arr1[7]||arr8[7]==arr2[7]||arr8[7]==arr3[7]||arr8[7]==arr4[7]||arr8[7]==arr5[7]||arr8[7]==arr6[7]||arr8[8]==arr1[8]||arr8[8]==arr2[8]||arr8[8]==arr3[8]||arr8[8]==arr4[8]||arr8[8]==arr5[8]||arr8[8]==arr6[8]||arr8[0]==arr7[0]||arr8[0]==arr7[1]||arr8[0]==arr7[2]||arr8[1]==arr7[0]||arr8[1]==arr7[1]||arr8[1]==arr7[2]||arr8[2]==arr7[0]||arr8[2]==arr7[1]||arr8[2]==arr7[2]||arr8[3]==arr7[3]||arr8[3]==arr7[4]||arr8[3]==arr7[5]||arr8[4]==arr7[3]||arr8[4]==arr7[4]||arr8[4]==arr7[5]||arr8[5]==arr7[3]||arr8[5]==arr7[4]||arr8[5]==arr7[5]||arr8[6]==arr7[6]||arr8[6]==arr7[7]||arr8[6]==arr7[8]||arr8[7]==arr7[6]||arr8[7]==arr7[7]||arr8[7]==arr7[8]||arr8[8]==arr7[6]||arr8[8]==arr7[7]||arr8[8]==arr7[8])
+
+		var arr9=[];
+		var arr17=[arr1[0],arr2[0],arr3[0],arr4[0],arr5[0],arr6[0],arr7[0],arr8[0]]
+		arr17=arr17.sort();
+		for(i=0;i<9;i++){
+			if (arr17[i]!=i+1)
+			{
+				arr9[0]=i+1;
+				break;
+			}
+		}
+		var arr18=[arr1[1],arr2[1],arr3[1],arr4[1],arr5[1],arr6[1],arr7[1],arr8[1]]
+		arr18=arr18.sort();
+		for(i=0;i<9;i++){
+			if (arr18[i]!=i+1)
+			{
+				arr9[1]=i+1;
+				break;
+			}
+		}
+		var arr19=[arr1[2],arr2[2],arr3[2],arr4[2],arr5[2],arr6[2],arr7[2],arr8[2]]
+		arr19=arr19.sort();
+		for(i=0;i<9;i++){
+			if (arr19[i]!=i+1)
+			{
+				arr9[2]=i+1;
+				break;
+			}
+		}
+		var arr20=[arr1[3],arr2[3],arr3[3],arr4[3],arr5[3],arr6[3],arr7[3],arr8[3]]
+		arr20=arr20.sort();
+		for(i=0;i<9;i++){
+			if (arr20[i]!=i+1)
+			{
+				arr9[3]=i+1;
+				break;
+			}
+		}
+		var arr21=[arr1[4],arr2[4],arr3[4],arr4[4],arr5[4],arr6[4],arr7[4],arr8[4]]
+		arr21=arr21.sort();
+		for(i=0;i<9;i++){
+			if (arr21[i]!=i+1)
+			{
+				arr9[4]=i+1;
+				break;
+			}
+		}
+		var arr22=[arr1[5],arr2[5],arr3[5],arr4[5],arr5[5],arr6[5],arr7[5],arr8[5]]
+		arr22=arr22.sort();
+		for(i=0;i<9;i++){
+			if (arr22[i]!=i+1)
+			{
+				arr9[5]=i+1;
+				break;
+			}
+		}
+		var arr23=[arr1[6],arr2[6],arr3[6],arr4[6],arr5[6],arr6[6],arr7[6],arr8[6]]
+		arr23=arr23.sort();
+		for(i=0;i<9;i++){
+			if (arr23[i]!=i+1)
+			{
+				arr9[6]=i+1;
+				break;
+			}
+		}
+		var arr24=[arr1[7],arr2[7],arr3[7],arr4[7],arr5[7],arr6[7],arr7[7],arr8[7]]
+		arr24=arr24.sort();
+		for(i=0;i<9;i++){
+			if (arr24[i]!=i+1)
+			{
+				arr9[7]=i+1;
+				break;
+			}
+		}
+		var arr25=[arr1[8],arr2[8],arr3[8],arr4[8],arr5[8],arr6[8],arr7[8],arr8[8]]
+		arr25=arr25.sort();
+		for(i=0;i<9;i++){
+			if (arr25[i]!=i+1)
+			{
+				arr9[8]=i+1;
+				break;
+			}
+		}
+		arr26=[arr1[0],arr1[1],arr1[2],arr1[3],arr1[4],arr1[5],arr1[6],arr1[7],arr1[8]];
+		arr27=[arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5],arr2[6],arr2[7],arr2[8]];
+		arr28=[arr3[0],arr3[1],arr3[2],arr3[3],arr3[4],arr3[5],arr3[6],arr3[7],arr3[8]];
+		arr29=[arr4[0],arr4[1],arr4[2],arr4[3],arr4[4],arr4[5],arr4[6],arr4[7],arr4[8]];
+		arr30=[arr5[0],arr5[1],arr5[2],arr5[3],arr5[4],arr5[5],arr5[6],arr5[7],arr5[8]];
+		arr31=[arr6[0],arr6[1],arr6[2],arr6[3],arr6[4],arr6[5],arr6[6],arr6[7],arr6[8]];
+		arr32=[arr7[0],arr7[1],arr7[2],arr7[3],arr7[4],arr7[5],arr7[6],arr7[7],arr7[8]];
+		arr33=[arr8[0],arr8[1],arr8[2],arr8[3],arr8[4],arr8[5],arr8[6],arr8[7],arr8[8]];
+		arr34=[arr9[0],arr9[1],arr9[2],arr9[3],arr9[4],arr9[5],arr9[6],arr9[7],arr9[8]];
+		//var n=2;
+
+			for (i=0;i<n;i++ )
+			{
+				arr1[parseInt(9*Math.random())]=[];
+			}
+			for (i=0;i<n;i++ )
+			{
+				arr2[parseInt(9*Math.random())]=[];
+			}
+			for (i=0;i<n;i++ )
+			{
+				arr3[parseInt(9*Math.random())]=[];
+			}
+			for (i=0;i<n;i++ )
+			{
+				arr4[parseInt(9*Math.random())]=[];
+			}
+			for (i=0;i<n;i++ )
+			{
+				arr5[parseInt(9*Math.random())]=[];
+			}
+			for (i=0;i<n;i++ )
+			{
+				arr6[parseInt(9*Math.random())]=[];
+			}
+			for (i=0;i<n;i++ )
+			{
+				arr7[parseInt(9*Math.random())]=[];
+			}
+			for (i=0;i<n;i++ )
+			{
+				arr8[parseInt(9*Math.random())]=[];
+			}
+			for (i=0;i<n;i++ )
+			{
+				arr9[parseInt(9*Math.random())]=[];
+			}
+
+			var t01 = document.getElementById("01");
+			t01.innerHTML=arr1[0];
+			var t02 = document.getElementById("02");
+			t02.innerHTML=arr1[1];
+			var t03 = document.getElementById("03");
+			t03.innerHTML=arr1[2];
+			var t04 = document.getElementById("04");
+			t04.innerHTML=arr1[3];
+			var t05 = document.getElementById("05");
+			t05.innerHTML=arr1[4];
+			var t06 = document.getElementById("06");
+			t06.innerHTML=arr1[5];
+			var t07 = document.getElementById("07");
+			t07.innerHTML=arr1[6];
+			var t08 = document.getElementById("08");
+			t08.innerHTML=arr1[7];
+			var t09 = document.getElementById("09");
+			t09.innerHTML=arr1[8];
+			var t10 = document.getElementById("10");
+			t10.innerHTML=arr2[0];
+			var t11 = document.getElementById("11");
+			t11.innerHTML=arr2[1];
+			var t12 = document.getElementById("12");
+			t12.innerHTML=arr2[2];
+			var t13 = document.getElementById("13");
+			t13.innerHTML=arr2[3];
+			var t14 = document.getElementById("14");
+			t14.innerHTML=arr2[4];
+			var t15 = document.getElementById("15");
+			t15.innerHTML=arr2[5];
+			var t16 = document.getElementById("16");
+			t16.innerHTML=arr2[6];
+			var t17 = document.getElementById("17");
+			t17.innerHTML=arr2[7];
+			var t18 = document.getElementById("18");
+			t18.innerHTML=arr2[8];
+			var t19 = document.getElementById("19");
+			t19.innerHTML=arr3[0];
+			var t20 = document.getElementById("20");
+			t20.innerHTML=arr3[1];
+			var t21 = document.getElementById("21");
+			t21.innerHTML=arr3[2];
+			var t22 = document.getElementById("22");
+			t22.innerHTML=arr3[3];
+			var t23 = document.getElementById("23");
+			t23.innerHTML=arr3[4];
+			var t24 = document.getElementById("24");
+			t24.innerHTML=arr3[5];
+			var t25 = document.getElementById("25");
+			t25.innerHTML=arr3[6];
+			var t26 = document.getElementById("26");
+			t26.innerHTML=arr3[7];
+			var t27 = document.getElementById("27");
+			t27.innerHTML=arr3[8];
+			var t28 = document.getElementById("28");
+			t28.innerHTML=arr4[0];
+			var t29 = document.getElementById("29");
+			t29.innerHTML=arr4[1];
+			var t30 = document.getElementById("30");
+			t30.innerHTML=arr4[2];
+			var t31 = document.getElementById("31");
+			t31.innerHTML=arr4[3];
+			var t32 = document.getElementById("32");
+			t32.innerHTML=arr4[4];
+			var t33 = document.getElementById("33");
+			t33.innerHTML=arr4[5];
+			var t34 = document.getElementById("34");
+			t34.innerHTML=arr4[6];
+			var t35 = document.getElementById("35");
+			t35.innerHTML=arr4[7];
+			var t36 = document.getElementById("36");
+			t36.innerHTML=arr4[8];
+			var t37 = document.getElementById("37");
+			t37.innerHTML=arr5[0];
+			var t38 = document.getElementById("38");
+			t38.innerHTML=arr5[1];
+			var t39 = document.getElementById("39");
+			t39.innerHTML=arr5[2];
+			var t40 = document.getElementById("40");
+			t40.innerHTML=arr5[3];
+			var t41 = document.getElementById("41");
+			t41.innerHTML=arr5[4];
+			var t42 = document.getElementById("42");
+			t42.innerHTML=arr5[5];
+			var t43 = document.getElementById("43");
+			t43.innerHTML=arr5[6];
+			var t44 = document.getElementById("44");
+			t44.innerHTML=arr5[7];
+			var t45 = document.getElementById("45");
+			t45.innerHTML=arr5[8];
+			var t46 = document.getElementById("46");
+			t46.innerHTML=arr6[0];
+			var t47 = document.getElementById("47");
+			t47.innerHTML=arr6[1];
+			var t48 = document.getElementById("48");
+			t48.innerHTML=arr6[2];
+			var t49 = document.getElementById("49");
+			t49.innerHTML=arr6[3];
+			var t50 = document.getElementById("50");
+			t50.innerHTML=arr6[4];
+			var t51 = document.getElementById("51");
+			t51.innerHTML=arr6[5];
+			var t52 = document.getElementById("52");
+			t52.innerHTML=arr6[6];
+			var t53 = document.getElementById("53");
+			t53.innerHTML=arr6[7];
+			var t54 = document.getElementById("54");
+			t54.innerHTML=arr6[8];
+			var t55 = document.getElementById("55");
+			t55.innerHTML=arr7[0];
+			var t56 = document.getElementById("56");
+			t56.innerHTML=arr7[1];
+			var t57 = document.getElementById("57");
+			t57.innerHTML=arr7[2];
+			var t58 = document.getElementById("58");
+			t58.innerHTML=arr7[3];
+			var t59 = document.getElementById("59");
+			t59.innerHTML=arr7[4];
+			var t60 = document.getElementById("60");
+			t60.innerHTML=arr7[5];
+			var t61 = document.getElementById("61");
+			t61.innerHTML=arr7[6];
+			var t62 = document.getElementById("62");
+			t62.innerHTML=arr7[7];
+			var t63 = document.getElementById("63");
+			t63.innerHTML=arr7[8];
+			var t64 = document.getElementById("64");
+			t64.innerHTML=arr8[0];
+			var t65 = document.getElementById("65");
+			t65.innerHTML=arr8[1];
+			var t66 = document.getElementById("66");
+			t66.innerHTML=arr8[2];
+			var t67 = document.getElementById("67");
+			t67.innerHTML=arr8[3];
+			var t68 = document.getElementById("68");
+			t68.innerHTML=arr8[4];
+			var t69 = document.getElementById("69");
+			t69.innerHTML=arr8[5];
+			var t70 = document.getElementById("70");
+			t70.innerHTML=arr8[6];
+			var t71 = document.getElementById("71");
+			t71.innerHTML=arr8[7];
+			var t72 = document.getElementById("72");
+			t72.innerHTML=arr8[8];
+			var t73 = document.getElementById("73");
+			t73.innerHTML=arr9[0];
+			var t74 = document.getElementById("74");
+			t74.innerHTML=arr9[1];
+			var t75 = document.getElementById("75");
+			t75.innerHTML=arr9[2];
+			var t76 = document.getElementById("76");
+			t76.innerHTML=arr9[3];
+			var t77 = document.getElementById("77");
+			t77.innerHTML=arr9[4];
+			var t78 = document.getElementById("78");
+			t78.innerHTML=arr9[5];
+			var t79 = document.getElementById("79");
+			t79.innerHTML=arr9[6];
+			var t80 = document.getElementById("80");
+			t80.innerHTML=arr9[7];
+			var t81 = document.getElementById("81");
+			t81.innerHTML=arr9[8];
+			
+		}
+	function update(){
+		line=document.getElementById("t1").value;
+		line=Number(line);
+		console.log(line);
+		list=document.getElementById("t2").value;
+		list=Number(list);
+		console.log(list);
+		if(line==1&&list==1){
+			document.getElementById("01").innerHTML=document.getElementById("t3").value;
+			document.getElementById("01").bgcolor="red";
+		}
+		if(line==1&&list==2){
+			document.getElementById("02").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==1&&list==3){
+			document.getElementById("03").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==1&&list==4){
+			document.getElementById("04").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==1&&list==5){
+			document.getElementById("05").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==1&&list==6){
+			document.getElementById("06").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==1&&list==7){
+			document.getElementById("07").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==1&&list==8){
+			document.getElementById("08").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==1&&list==9){
+			document.getElementById("09").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==1){
+			document.getElementById("10").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==2){
+			document.getElementById("11").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==3){
+			document.getElementById("12").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==4){
+			document.getElementById("13").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==5){
+			document.getElementById("14").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==6){
+			document.getElementById("15").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==7){
+			document.getElementById("16").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==8){
+			document.getElementById("17").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==2&&list==9){
+			document.getElementById("18").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==1){
+			document.getElementById("19").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==2){
+			document.getElementById("20").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==3){
+			document.getElementById("21").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==4){
+			document.getElementById("22").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==5){
+			document.getElementById("23").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==6){
+			document.getElementById("24").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==7){
+			document.getElementById("25").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==8){
+			document.getElementById("26").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==3&&list==9){
+			document.getElementById("27").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==1){
+			document.getElementById("28").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==2){
+			document.getElementById("29").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==3){
+			document.getElementById("30").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==4){
+			document.getElementById("31").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==5){
+			document.getElementById("32").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==6){
+			document.getElementById("33").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==7){
+			document.getElementById("34").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==8){
+			document.getElementById("35").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==4&&list==9){
+			document.getElementById("36").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==1){
+			document.getElementById("37").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==2){
+			document.getElementById("38").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==3){
+			document.getElementById("39").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==4){
+			document.getElementById("40").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==5){
+			document.getElementById("41").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==6){
+			document.getElementById("42").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==7){
+			document.getElementById("43").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==8){
+			document.getElementById("44").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==5&&list==9){
+			document.getElementById("45").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==1){
+			document.getElementById("46").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==2){
+			document.getElementById("47").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==3){
+			document.getElementById("48").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==4){
+			document.getElementById("49").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==5){
+			document.getElementById("50").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==6){
+			document.getElementById("51").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==7){
+			document.getElementById("52").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==8){
+			document.getElementById("53").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==6&&list==9){
+			document.getElementById("54").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==1){
+			document.getElementById("55").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==2){
+			document.getElementById("56").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==3){
+			document.getElementById("57").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==4){
+			document.getElementById("58").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==5){
+			document.getElementById("59").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==6){
+			document.getElementById("60").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==7){
+			document.getElementById("61").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==8){
+			document.getElementById("62").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==7&&list==9){
+			document.getElementById("63").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==1){
+			document.getElementById("64").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==2){
+			document.getElementById("65").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==3){
+			document.getElementById("66").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==4){
+			document.getElementById("67").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==5){
+			document.getElementById("68").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==6){
+			document.getElementById("69").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==7){
+			document.getElementById("70").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==8){
+			document.getElementById("71").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==8&&list==9){
+			document.getElementById("72").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==1){
+			document.getElementById("73").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==2){
+			document.getElementById("74").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==3){
+			document.getElementById("75").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==4){
+			document.getElementById("76").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==5){
+			document.getElementById("77").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==6){
+			document.getElementById("78").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==7){
+			document.getElementById("79").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==8){
+			document.getElementById("80").innerHTML=document.getElementById("t3").value;
+		}
+		if(line==9&&list==9){
+			document.getElementById("81").innerHTML=document.getElementById("t3").value;
+		}
+	}
+</script>
+</body>
+</html>

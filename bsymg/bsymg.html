@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="js/bsymg.js"></script>
+  <style>
+	div{
+		margin: 0 auto;
+	}
+	#tbody{
+		margin: 0 auto;
+		width: 400px;
+		height: 480px;
+		border: 1px solid black;
+		table-layout:fixed;
+	}
+	#tbody td{
+		width: 80px;
+		height: 80px;
+		border: 1px solid black;
+		text-align:center;
+		font-size: 20px;
+	}
+	#d1{
+		margin: 0 auto;
+		width: 300px;
+		height: 100px;
+		display:flex;
+		flex-wrap:wrap;
+	}
+	#d1 span{
+		font-size: 14px;
+	}
+	#d1>div{
+		width:100px;
+		height: 50px;
+		text-align:center;
+		line-height: 50px;
+	}
+	#d1>div:first-child{
+		color:red;
+	}
+	#d1>div:nth-child(2){
+		color:blue;
+	}
+	#d1>div:nth-child(4){
+		color:orange;
+	}
+	#d1>div:nth-child(5){
+		color:purple;
+	}
+	#d1>div:nth-child(6){
+		color:#33ffff;
+	}
+	  #d2{
+		  font-size: 50px;
+		  text-align: center;
+	  }
+  </style>
+ </head>
+ <body onload="start()">
+	<div id="d1">
+		<div><span>血：</span><span id="xue">500</span></div>
+		<div><span>蓝：</span><span id="lan">500</span></div>
+		<div><span>钥匙：</span><span id="key">0</span></div>
+		<div><span>攻：</span><span id="gong">50</span></div>
+		<div><span>魔：</span><span id="mo">50</span></div>
+		<div><span>探索点：</span><span id="tsd">0</span></div>
+	</div>
+	<div>
+		<table cellpadding=0 cellspacing=0 id="tbody">
+		<tr>
+			<td id="t01" onclick="c01()" class='w80'	></td>
+			<td id="t02" onclick="c02()"></td>
+			<td id="t03" onclick="c03()"></td>
+			<td id="t04" onclick="c04()"></td>
+			<td id="t05" onclick="c05()"></td>
+		</tr>
+		<tr>
+			<td id="t06" onclick="c06()"></td>
+			<td id="t07" onclick="c07()"></td>
+			<td id="t08" onclick="c08()"></td>
+			<td id="t09" onclick="c09()"></td>
+			<td id="t10" onclick="c10()"></td>
+		</tr>
+		<tr>
+			<td id="t11" onclick="c11()"></td>
+			<td id="t12" onclick="c12()"></td>
+			<td id="t13" onclick="c13()"></td>
+			<td id="t14" onclick="c14()"></td>
+			<td id="t15" onclick="c15()"></td>
+		</tr>
+		<tr>
+			<td id="t16" onclick="c16()"></td>
+			<td id="t17" onclick="c17()"></td>
+			<td id="t18" onclick="c18()"></td>
+			<td id="t19" onclick="c19()"></td>
+			<td id="t20" onclick="c20()"></td>
+		</tr>
+		<tr>
+			<td id="t21" onclick="c21()"></td>
+			<td id="t22" onclick="c22()"></td>
+			<td id="t23" onclick="c23()"></td>
+			<td id="t24" onclick="c24()"></td>
+			<td id="t25" onclick="c25()"></td>
+		</tr>
+		<tr>
+			<td id="t26" onclick="c26()"></td>
+			<td id="t27" onclick="c27()"></td>
+			<td id="t28" onclick="c28()"></td>
+			<td id="t29" onclick="c29()"></td>
+			<td id="t30" onclick="c30()"></td>
+		</tr>
+		</table>
+	</div>
+ 	<div id="d2">第<span id="loucen">1</span>楼</div>
+ </body>
+</html>
